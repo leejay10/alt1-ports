@@ -1,0 +1,262 @@
+#voyage {
+	width:100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	
+	
+}
+#voyage .voyageBody {
+	position:relative;
+	width:324px;
+	height:90px;
+	border:1px #b95f06 solid;
+	font-family:rs-pro-3;
+}
+#voyage .voyageBody input[disabled] {
+	background-color:transparent;
+	border:none;
+	padding:1px 5px 1px 5px;
+}
+#voyage .voyageBody input {
+	background-color:rgba(0,0,0,.2);
+	border-radius:5px;
+	border:1px rgba(255,255,255,.2) solid;
+	font-family:rs-pro-3;
+	padding:0 4px 0 4px;
+}
+#voyage .voyageBody input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#voyage .voyageBody input::-webkit-outer-spin-button,
+#voyage .voyageBody input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#voyage .voyageBody .title input, #voyage .voyageBody .title input[type=text][disabled], #voyage .voyageBody .title input::-webkit-input-placeholder  {
+	position:absolute;
+	top:10px;
+	left:10px;
+	color:#f9ecd5;
+	font-size:large;
+	width:180px;
+}
+#voyage .voyageBody .success {
+	position:absolute;
+	top:11px;
+	width:35px;
+	right:30px;
+	color:white;
+	font-size:medium;
+	text-align:right
+}
+#voyage .voyageBody .success span {
+	position:absolute;
+	color:#e8a23d;
+	left:-50px;
+}
+#voyage .voyageBody .edit {
+	position:absolute;
+	top:11px;
+	right:10px;
+}
+#voyage .voyageBody .edit:hover {
+	color:gray;
+}
+
+#voyage .voyageBody .hr {
+	position:absolute;
+	top:32px;
+	left:8px;
+	right:12px;
+	height:1px;
+	background-color:#96816c;
+}
+#voyage .voyageBody .stats {
+	position:absolute;
+	top:40px;
+	left:20px;
+	right:20px;
+	display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#voyage .voyageBody .stats .stat span {
+	color:#e8a23d;
+}
+#voyage .voyageBody .stats .stat input, #voyage .voyageBody .stats .stat input[type=text][disabled], #voyage .voyageBody .stats .stat input::-webkit-input-placeholder  {
+	width:33px;
+	color:#ffffff
+}
+#voyage .voyageBody .crewlist {
+	position:absolute;
+	top:60px;
+	left:145px;
+	width:168px;
+	height:25px;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;/* works with row or column */
+    flex-direction: row;
+
+}
+#voyage .voyageBody .crewlist .crew {
+	padding-right:3px;
+	width:25px;
+	height:25px;
+}
+#voyage .voyageBody .nisbutton {
+	position:absolute;
+	top:60px;
+	left:10px;
+	width:106px;
+	height:25px;
+	line-height:25px;
+	margin:0;
+	font-size:12px;
+
+}
+
+#voyage .upgrades .upgrade .headerTitle {
+	top:-19px;
+	left:30px;
+	right:30px;
+}
+#voyage .upgrades {
+	position:relative;
+	width:324px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	
+}
+#voyage .upgrades .upgrade:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	border: 1px solid #2b3a44; 
+}
+
+#voyage .upgrades .upgrade {
+	width:140px;
+	margin-top:25px;
+	padding:5px;
+	position: relative;
+	border: 1px solid #122028;
+}
+#voyage .upgrades .upgrade.u1{
+	height:22px;
+}
+#voyage .upgrades .upgrade.u2 {
+	height:47px;
+}
+#voyage .upgrades .upgrade.u3 {
+	height:72px;
+}
+#voyage .upgrades .upgrade.u4 {
+	height:97px;
+}
+#voyage .upgrades .upgrade#effectBonus, #voyage .upgrades .upgrade#options {
+	width:324px;
+}
+#voyage .upgrades .upgrade:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	border: 1px solid #192931; 
+}
+
+#voyage .upgrades .upgrade .inner {
+	position:absolute;
+	font-size:11px;
+	overflow:hidden;
+ 	top:7px;
+ 	left:0px;
+ 	right:0px;
+ 	bottom:0px;
+}
+#voyage .upgrades .upgrade.scroll .inner {
+	overflow-y:scroll;
+}
+#voyage .upgrades .upgrade#options .inner {
+	display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    overflow:hidden;
+}
+
+#voyage .upgrades .upgrade#effectBonus .inner {
+	overflow:hidden;
+}
+#voyage .upgrades .upgrade#options .inner .row {
+	width:134px;
+}
+#voyage .upgrades .upgrade .inner .row {
+	padding:5px 20px 5px 5px;
+	white-space: nowrap;
+  	overflow: hidden;
+  	height:13px;
+  	margin-right:2px;
+	background-color:#534c44;
+	background: linear-gradient(#534c44, #271d14, #190e03, #190e03, #241a11);
+}
+#voyage .upgrades .upgrade .inner .row:hover, {
+	background-color:#372109;
+	background: linear-gradient(#877567, #55402a, #372109, #372109, #473323);
+}
+
+#voyage .upgrades .upgrade .inner .row .options {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+#voyage .upgrades .upgrade .inner .row .name {
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	border:1px black solid;
+	padding:5px 20px 5px 5px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+#voyage .upgrades .upgrade .inner .row .status {
+	position:absolute;
+}
+#voyage .upgrades .upgrade .inner .row .status.check {
+	top:5px;
+	right:4px;
+	width:10px;
+	height:9px;
+}
+#voyage .upgrades .upgrade .inner .row .status.lock {
+	top:3px;
+	right:4px;
+	width:12px;
+	height:15px;
+}
+#voyage .upgrades .upgrade.hide {
+	height:0px;
+}
+#voyage .upgrades .upgrade.hide .inner {
+	display:none !important;
+}
+

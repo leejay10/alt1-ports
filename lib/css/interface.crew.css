@@ -1,0 +1,301 @@
+.crewlist .crew {
+	padding-right:3px;
+	float:left;
+	width:25px;
+	height:25px;
+}
+#crew {
+	width:100%;
+	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   	justify-content: center;
+}
+
+#crew .crewBody:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	border: 1px solid #2b3a44; 
+}
+#crew .crewBody {
+	margin-top:20px;
+	width:324px;
+	height:276px;
+	position: relative;
+	border: 1px solid #122028; 
+}
+#crew .crewBody:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	border: 1px solid #192931; 
+}
+.crewBody .crewHeader {
+	position:relative;
+	top:-22px;
+	left:62px;
+	width:200px;
+	height:26px;
+	z-index:9900;
+}
+#crew .crewBody i.edit {
+	position:absolute;
+	top:-20px;
+	right:0px;
+}
+#crew .crewBody i.edit:hover {
+	color:gray;
+}
+.crewBody .container#captainsContainer, .crewBody .container#crewContainer {
+	position:absolute;
+	top:-2px;
+	left:0px;
+	width:62px;
+	height:278px;
+	border-right: 1px #70706f solid;
+}
+.crewBody .container#crewContainer {
+	left:63px;
+	width:260px;
+	height:272px;
+	padding-top:6px;
+	border:none;
+}
+
+.container#captainsContainer .crew, .container#crewContainer .crew {
+	width:62px;
+	height:55px;
+	position:relative;
+	float:left;
+	z-index:9100;
+}
+.container#crewContainer .crew {
+	width:52px;
+}
+.container#captainsContainer .crew .crewBorder, .container#crewContainer .crew .crewBorder {
+	position: relative;
+	top:6px;
+	left:7px;
+	width:51px;
+	height:49px;
+	z-index:9105;
+}
+.container#crewContainer .crew .crewBorder {
+	top:0px;
+	left:1px;
+	width:17px;
+	height:18px;
+}
+
+.container#captainsContainer .crew .crewBorder.active {
+	top:3px;
+	left:5px;
+	width:55px;
+	height:55px;
+}
+.container#crewContainer .crew .crewBorder.active {
+	top:0px;
+	left:1px;
+	width:45px;
+	height:45px;
+}
+.container#captainsContainer .crew .crew, .container#crewContainer .crew .crew {
+	position: absolute;
+	top:13px;
+	left:15px;
+	width:35px;
+	height:35px;
+	z-index:9101;
+}
+.container#crewContainer .crew .crew {
+	top:7px;
+	left:8px;
+	width:35px;
+	height:35px;
+}
+.container#captainsContainer .crew .crewPosition, .container#crewContainer .crew .crewPosition {
+	position: absolute;
+	top:8px;
+	left:10px;
+	width:14px;
+	height:14px;
+	background-color:#22150d;
+	border-radius:3px;
+	font-family:rs-pro-3;
+	color:white;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:1px;
+	z-index:9104;
+}
+.container#crewContainer .crew .crewPosition {
+	top:2px;
+	left:2px;
+	width:15px;
+	border-radius:6px;
+}
+.container#captainsContainer .crew .crewLevel, .container#crewContainer .crew .crewLevel {
+	position: absolute;
+	bottom:5px;
+	right:9px;
+	width:14px;
+	height:14px;
+	font-family:rs-pro-3;
+	color:white;
+	text-shadow:-1px -1px 1px #000,1px -1px 1px #000,-1px 1px 1px #000,1px 1px 1px #000;  
+	text-align:center;
+	vertical-align:middle;
+	padding-top:1px;
+	z-index:9103;
+}
+.container#crewContainer .crew .crewLevel {
+	bottom:11px;
+	right:7px;
+}
+
+.container#captainsContainer .crew .addCrew, .container#crewContainer .crew .addCrew {
+	position: relative;
+	top:13px;
+	left:15px;
+	color:rgba(158,157,156,.7);
+	text-shadow:0px -1px 1px #2a1b0e,1px -1px 1px #2a1b0e,-1px 1px 1px #2a1b0e,1px 1px 1px #2a1b0e;  
+	font-size:x-large;
+	z-index:9102;
+}
+.container#captainsContainer .crew .addCrew {
+	top:18px;
+	left:22px;
+}
+.container .crew:hover .addCrew {
+	color:rgba(158,157,156,.5) !important;
+}
+
+#crewSelection {
+	position:relative;
+	top:3px;
+	width:100%;
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;/* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+
+}
+#crewSelection .crewBody:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	border: 1px solid #2b3a44; 
+}
+#crewSelection .crewBody {
+	width:161px;
+	height:115px;
+	border: 1px solid #122028; 
+}
+#crewSelection .crewBody {
+	position:relative;
+}
+#crewSelection .crewBody:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	border: 1px solid #192931; 
+}
+.crewBody.selected {
+	width:160px !important;
+	margin-right:1px;
+}
+#crewSelection .crewBody span.title {
+	font-family:rs-pro-3;
+	color:rgb(249,236,213);
+	position:absolute;
+	top:3px;
+	width:100%;
+	text-align:center;
+
+}
+#crewSelection .crewBody span.name  {
+	font-family:rs-pro-3;
+	color:white;
+	position:absolute;
+	font-size:16px;
+	top: 21px;
+	width:100%;
+	text-align:center;
+
+}
+#crewSelection .crewBody div.crew  {
+	position:absolute;
+	top:43px;
+	left:10px;
+}
+#crewSelection .crewBody div.level  {
+	position:absolute;
+	font-size:16px;
+	top:79px;
+	left:9px;
+	width:105px;
+	color:rgb(255,255,255);
+	font-family:rs-pro-3;
+}
+#crewSelection .crewBody div.stat  {
+	position:absolute;
+	left:121px;
+	width:105px;
+	color:rgb(255,255,255);
+	font-family:rs-pro-3;
+	
+}
+
+#crewSelection .crewBody div.stat.higher  {
+	color:rgb(0,255,0);
+
+}
+#crewSelection .crewBody div.stat.lower {
+	color:rgb(255,0,0);
+}
+#crewSelection .crewBody div.stat.morale  {
+	top:39px;
+}
+#crewSelection .crewBody div.stat.combat  {
+	top:52px;
+}
+#crewSelection .crewBody div.stat.seafaring  {
+	top:65px;
+}
+#crewSelection .crewBody div.stat.speed  {
+	top:78px;
+}
+#crewSelection .crewBody div.stat span  {
+	position:absolute;
+	left:-57px;
+	color:rgb(254,157,3);
+}
+
+#crewSelection .crewBody span.traits  {
+	font-family:rs-pro-3;
+	color:rgb(249,236,213);
+	position:absolute;
+	top:95px;
+	left:5px;
+	right:5px;
+	text-align:center;
+	word-wrap:break-word;
+
+}
